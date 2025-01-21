@@ -24,6 +24,13 @@ public class ClientsController : ControllerBase
         return Ok();
     }
 
+    [HttpGet]
+    [Route("{id}/joao/{sobrenome}")]
+    public IActionResult GetById(Guid id, string sobrenome)
+    {
+        return Ok();
+    }
+
     [HttpDelete]
     public IActionResult Delete()
     {
